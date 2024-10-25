@@ -11,6 +11,11 @@
                 TRAINS INFO TABLE
             </h1>
         </div>
+        <div class="today">
+            <p class="fw-bold text-secondary">
+                Date: {{$currentDate}}
+            </p>
+        </div>
         <table class="table table-striped">
             <thead>
                 <tr>
