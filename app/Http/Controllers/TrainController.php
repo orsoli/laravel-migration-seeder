@@ -9,16 +9,16 @@ use Illuminate\Http\Request;
 
 class TrainController extends Controller
 {
-        public function home() {
+    public function home() {
             // local Viariables
             $headerTableItems = [
                 '#',
                 'Company',
-                'Departure station',
-                'Arrival station',
-                'Departure time',
-                'Arrival time',
                 'Train code',
+                'Departure station',
+                'Departure time',
+                'Arrival station',
+                'Arrival time',
                 'Number of carriages',
                 'On time',
                 'Cancelled',
@@ -28,6 +28,13 @@ class TrainController extends Controller
             $trains = Train::all();
 
         return view('pages.home', compact('headerTableItems','trains', 'currentDate'));
+    }
+
+    public function show($id) {
+            // Get db
+            $train = Train::findOrFail($id);
+
+        return view('pages.train_show', compact('train'));
     }
 
 }

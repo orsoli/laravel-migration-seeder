@@ -17,14 +17,9 @@
 
     </head>
     <body>
-        {{-- Header  --}}
-        @include('partials.header')
 
         {{-- Main  --}}
         @yield('main-content')
-
-        {{-- Footer  --}}
-        @include('partials.footer')
 
         {{-- Integrate app.js  --}}
         @vite("resources/js/app.js")
