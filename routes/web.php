@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\PassengerController;
 use App\Http\Controllers\TrainController;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +18,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [TrainController::class, 'home'])->name('home');
 Route::get('/pages/train_show/{id}', [TrainController::class, 'show'])->name('show');
+Route::get('/pages/passenger', [PassengerController::class, 'index'])->name('passenger');
