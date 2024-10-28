@@ -5,7 +5,7 @@
 
 @section('main-content')
     <main>
-        <h1>Passenger List</h1>
+        <h1 class="text-center text-white py-5">Passenger List</h1>
         <table class="table table-striped w-50 m-auto">
             <thead>
                 <tr>
