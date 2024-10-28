@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Faker\Generator as Fake;
 
 class PassengerSeeder extends Seeder
 {
@@ -12,6 +13,6 @@ class PassengerSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+
     }
 }
