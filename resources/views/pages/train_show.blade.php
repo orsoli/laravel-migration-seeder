@@ -9,7 +9,7 @@
         <nav class="navbar navbar-expand-lg bg-body-transparent">
             <div class="container-fluid">
                 <div>
-                    <a class="navbar-brand text-light" href="#">Tickets</a>
+                    <a class="navbar-brand text-light" href="{{route('home')}}">Tickets</a>
                 </div>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
